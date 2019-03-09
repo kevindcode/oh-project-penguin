@@ -17,22 +17,24 @@ class Block {
   }
 
   checkCollision(player) {
-
-    if (player.posY + player.height > this.posY && player.posX + player.width > this.posX && player.posX < this.posX + this.width) {
-      player.addingGravity = 'no';
+    if (
+      player.posY + player.height > this.posY &&
+      player.posX + player.width > this.posX &&
+      player.posX < this.posX + this.width
+    ) {
+      console.log("collided with ground");
+      player.addingGravity = "no";
       player.grounded = true;
-      player.posY = (this.posY - player.height) - this.collisionOffset;
-     
-    }
-    else{
+      player.posY = this.posY - player.height - this.collisionOffset;
+    } else {
       player.onPlatform = false;
     }
-    if (player.grounded && !player.onPlatform){
+    if (player.grounded && !player.onPlatform) {
       player.grounded = false;
       player.gravity = 0;
       player.verticalvelocity = 3;
       player.verticalAcceleration = 1;
-      player.addingGravity = 'positive';
+      player.addingGravity = "positive";
     }
   }
 }

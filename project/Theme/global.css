@@ -16,7 +16,7 @@ h1 {
   top: 20px;
 }
 
-#gameCanvas {
+#game-canvas {
   background: lightblue;
   width: 900px;
   height: 600px;
