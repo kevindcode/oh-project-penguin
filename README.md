@@ -1,1 +1,6 @@
-# Oh-Two-Penguin
+## Oh-Two-Penguin
+
+### Contributors
+
+- Andrea
+- Kevin
