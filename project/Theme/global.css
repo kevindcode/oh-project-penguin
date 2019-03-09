@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(40, 40, 40);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff69;
+  font-size: 50px;
+  position: relative;
+  top: 20px;
+}
+
+#gameCanvas {
+  background: lightblue;
+  width: 900px;
+  height: 600px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+}
