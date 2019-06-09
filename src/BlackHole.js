@@ -16,8 +16,9 @@ class BlackHole {
   }
 
   display() {
+    const {x, y} = this.vector;
     fill('#BDD9BF');
-    ellipse(this.vector.x, this.vector.y, this.radius);
+    ellipse(x, y, this.radius);
   }
 
   update() {
